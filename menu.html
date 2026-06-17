@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lain</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Bella</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">BobaBella</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+            
+            </ul>
+
+            <a href="#" class="btn-order">Pesan Sekarang</a>
+
+            <a href="#" class="hamburger" id="menu"> <i data-feather="menu"></i></a>
+
+
+        </nav>
+    </header>
+
+
+    <section class="menu" id="menuu">
+
+        <div class="section-title">
+            <h2>Menu</h2>
+            <p>Pilihan minuman terbaik untuk menemani harimu.</p>
+        </div>
+
+        <div class="menu-container">
+
+             <div class="menu-card">
+                <img src="5.jpg">
+                <h3>Caramel Boba</h3>
+                <p>Perpaduan susu creamy dengan saus karamel manis yang lembut dan menggoda.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="6.jpg">
+                <h3>Cookies & Cream</h3>
+                <p>susu creamy dengan taburan biskuit coklat yang renyah dan kaya rasa.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="7.jpg">
+                <h3>Pudding Milk Tea</h3>
+                <p>Milk tea segar dengan topping pudding lembut yang lumer dimulut.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="8.jpg">
+                <h3>Orange Tea</h3>
+                <p>teh segar dengan rasa jeruk yang manis dan menyegarkan.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="9.jpg">
+                <h3>Brown Sugar Milk Tea</h3>
+                <p>milk tea creamy dengan cita rasa brown sugar yang manis dan khas.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="10.jpg">
+                <h3>Lemon Tea</h3>
+                <p>Perpaduan teh dan lemon segar yang memberikan sensasi dingin dan menyegarkan.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="11.jpg">
+                <h3>Passion Fruit Tea</h3>
+                <p>rasa markisa tropis yang manis dan sedikit asam, cocok diminum saat cuaca panas.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="12.jpg">
+                <h3>Strawberry Yakult</h3>
+                <p>Perpaduan stroberi segar dan Yakult yang manis, asam, dan menyegarkan.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+             <div class="menu-card">
+                <img src="13.jpg">
+                <h3>Strawberry Milk</h3>
+                <p>susu creamy dengan rasa stroberi yang lembut dan disukai semua kalangan.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="14.jpg">
+                <h3>Strawberry Cheese</h3>
+                <p>Minuman stroberi segar dengan lapisan cream cheese yang lembut dan gurih.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <h3>BobaBella</h3>
+        <p>Minuman kekinian dengan cita rasa terbaik.</p>
+
+        <div class="footer-bottom">
+            © 2026 BobaBella. All Rights Reserved.
+        </div>
+
+        <div class="footer-logo">
+
+            <a href="#"> <i data-feather="instagram"></i></a>
+            <a href="#"> <i data-feather="facebook"></i></a>
+            <a href="#"> <i data-feather="twitter"></i></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+
+        const navbarlist = document.querySelector
+            ('.nav-links');
+
+        document.querySelector('#menu').
+            onclick = () => {
+                navbarlist.classList.toggle('active');
+            };
+
+        const hamburger = document.querySelector('#menu');
+
+        document.addEventListener('click', function (e) {
+            if (!hamburger.contains(e.target) && !navbarlist.contains(e.target)) {
+                navbarlist.classList.remove('active');
+            }
+
+        });
+
+
+
+
+        // Alert Promo
+        const promoBtn = document.getElementById("claimPromo");
+
+        promoBtn.addEventListener("click", () => {
+            alert("Promo berhasil diklaim! 🎉");
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href"))
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+            });
+
+        });
+    </script>
+
+
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>

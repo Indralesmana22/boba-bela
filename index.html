@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Bella</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">BobaBella</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menuu">Menu</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+
+            </ul>
+
+            <a href="#" class="btn-order">Pesan Sekarang</a>
+            <a href="#" class="hamburger" id="menu"> <i data-feather="menu"></i></a>
+
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Rasa Boba Kekinian <br> Dengan Sentuhan Cinta</h1>
+
+            <p>
+                Nikmati minuman segar dengan topping boba premium,
+                dibuat dari bahan pilihan berkualitas dan rasa yang bikin nagih.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menuu" class="btn-primary">Lihat Menu</a>
+                <a href="#promo" class="btn-secondary">Promo Hari Ini</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="boba.jpg" alt="Boba">
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="feature-box">
+            <h3>100% Fresh</h3>
+            <p>Dibuat langsung saat dipesan agar rasa tetap segar dan nikmat.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Premium Boba</h3>
+            <p>Boba lembut dan kenyal dengan rasa manis yang pas.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Harga Bersahabat</h3>
+            <p>Nikmat premium dengan harga yang tetap ramah di kantong.</p>
+        </div>
+
+    </section>
+
+
+    <section class="menu" id="menuu">
+
+        <div class="section-title">
+            <h2>Menu Favorit</h2>
+            <p>Pilihan minuman terbaik untuk menemani harimu.</p>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="1.jpg">
+                <h3>Coklat Oreo</h3>
+                <p>Perpaduan susu creamy dan oreo renyah yang autentik.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="macha.jpg">
+                <h3>Matcha Latte</h3>
+                <p>Rasa matcha premium dengan sensasi lembut.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="3.jpg">
+                <h3>Choco Hazelnut</h3>
+                <p>Coklat creamy dipadukan dengan hazelnut lezat.</p>
+                <span>Rp 20.000</span>
+            </div>
+
+        </div>
+
+        <div class="menu-lain">
+            <a href="menu.html">Menu Lainnya...</a>
+        </div>
+
+    </section>
+
+
+    <section class="about" id="tentang">
+
+        <div class="about-image">
+            <img src="4.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Kenapa Memilih Kami?</h2>
+
+            <p>
+                Kami menghadirkan minuman boba dengan kualitas terbaik,
+                rasa unik, dan tampilan modern yang cocok untuk semua kalangan.
+                Setiap menu dibuat dengan penuh perhatian agar setiap tegukan
+                memberikan pengalaman yang menyenangkan.
+            </p>
+
+            <a href="#" class="btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+
+    </section>
+
+
+    <section class="promo" id="promo">
+
+        <div class="promo-box">
+            <h2>Promo Spesial Weekend</h2>
+
+            <p>
+                Beli 2 Gratis 1 untuk semua varian minuman ukuran large.
+                Berlaku setiap Sabtu dan Minggu!
+            </p>
+
+            <button id="claimPromo">Klaim Promo</button>
+        </div>
+
+    </section>
+
+
+    <section class="testimoni">
+
+        <div class="section-title">
+            <h2>Apa Kata Mereka?</h2>
+        </div>
+
+        <div class="testi-container">
+
+            <div class="testi-card">
+                <p>
+                    “Rasa bobanya beda dari yang lain, manisnya pas dan creamy banget!”
+                </p>
+                <h4>- Ronaldo</h4>
+            </div>
+
+            <div class="testi-card">
+                <p>
+                    “Tempat favorit buat nongkrong sambil minum boba.”
+                </p>
+                <h4>- Messi</h4>
+            </div>
+
+            <div class="testi-card">
+                <p>
+                    “Harga murah tapi kualitas premium.”
+                </p>
+                <h4>- Mbappe</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="kontak">
+
+        <div class="section-title">
+            <h2>Kontak Kami</h2>
+        </div>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Nama Lengkap">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Pesan"></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <h3>BobaBella</h3>
+        <p>Minuman kekinian dengan cita rasa terbaik.</p>
+
+        <div class="footer-bottom">
+            © 2026 BobaBella. All Rights Reserved.
+        </div>
+
+        <div class="footer-logo">
+
+            <a href="#"> <i data-feather="instagram"></i></a>
+            <a href="#"> <i data-feather="facebook"></i></a>
+            <a href="#"> <i data-feather="twitter"></i></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+
+        const navbarlist = document.querySelector
+            ('.nav-links');
+
+        document.querySelector('#menu').
+            onclick = () => {
+                navbarlist.classList.toggle('active');
+            };
+
+        const hamburger = document.querySelector('#menu');
+
+        document.addEventListener('click', function (e) {
+            if (!hamburger.contains(e.target) && !navbarlist.contains(e.target)) {
+                navbarlist.classList.remove('active');
+            }
+
+        });
+
+
+
+
+        // Alert Promo
+        const promoBtn = document.getElementById("claimPromo");
+
+        promoBtn.addEventListener("click", () => {
+            alert("Promo berhasil diklaim! 🎉");
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href"))
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+            });
+
+        });
+    </script>
+
+
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>

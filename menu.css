@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fffaf6;
+    color: #333;
+}
+
+
+.navbar{
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: white;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #7b3f00;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #d2691e;
+}
+ .btn-order{
+    text-decoration: none;
+    background: #7b3f00;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+ .btn-order:hover{
+    background: #a0522d;
+}
+
+
+.hamburger{
+    color: red;
+    display: none;
+}
+
+
+
+
+
+
+.menu{
+    padding: 80px 8%;
+    margin-top: 40px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    color: #5c2c06;
+}
+
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+.menu-card{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.menu-card:hover{
+    transform: translateY(-10px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-card h3{
+    padding: 15px 20px 5px;
+}
+
+.menu-card p{
+    padding: 0 20px;
+    color: #666;
+}
+
+.menu-card span{
+    display: block;
+    padding: 20px;
+    font-weight: 700;
+    color: #7b3f00;
+}
+
+.menu-lain{
+    margin-top: 1.5rem;
+}
+
+.menu-lain a{
+    text-decoration: none;
+    color: #666;
+}
+
+.menu-lain a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+footer{
+    background: #5c2c06;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+.footer-bottom{
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-logo{
+    margin-top: 0.5rem;
+    
+}
+
+.footer-logo a{
+    color: white;
+}
+
+.footer-logo a:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*buat Responsive */
+/* ukuran tablet */
+@media(max-width: 768px){
+
+    .hero,
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 42px;
+    }
+
+    .hero-image img,
+    .about-image img{
+        width: 100%;
+    }
+
+
+   
+
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 15rem;
+        height: 100vh;
+        transition: 0.3s;
+        display: block;
+    }
+
+    .nav-links.active{
+        right: 0;
+    }
+
+    .nav-links a{
+        color: #5c2c06;
+        margin: 3rem;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        line-height: 2.5;
+    }
+
+
+    .hero-buttons{
+        justify-content: center;
+    }
+
+    .btn-order{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+
+}
